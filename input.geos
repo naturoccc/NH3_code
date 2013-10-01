@@ -1,0 +1,237 @@
+GEOS-CHEM SIMULATION v9-01-01: GEOS-5 NOx-Ox-HC-Aerosol simulation (43 tracers)
+------------------------+------------------------------------------------------
+%%% SIMULATION MENU %%% :
+Start YYYYMMDD, HHMMSS  : 20060101 000000
+End   YYYYMMDD, HHMMSS  : 20070101 000000
+Run directory           : ./
+Input restart file      : ./restart/restart.geos5.YYYYMMDDhh
+Make new restart file?  : T
+Output restart file(s)  : ./restart/restart.geos5.YYYYMMDDhh
+Root data directory     : /home/chenchuchu/cmaq/WRF_CMAQ_cn36/
+ => GCAP       subdir   : AGRID/YYYY/MM/
+ => GEOS-3     subdir   : GEOS_3/YYYY/MM/
+ => GEOS-4     subdir   : GEOS_4_v4/YYYY/MM/
+ => GEOS-5     subdir   : GEOS_5/YYYY/MM/
+ => MERRA  subdirectory : MERRA/YYYY/MM/
+Dir w/ 1x1 emissions etc: /z2/geos/GEOS_1x1/
+Temporary directory     : ./
+Unzip met fields?       : F
+Wait for met fields?    : F
+Use variable tropopause?: T
+Use LINOZ strat chem?   : T
+Global offsets I0, J0   : 375 158
+------------------------+------------------------------------------------------
+%%% TRACER MENU %%%     : 
+Type of simulation      : 3
+Number of Tracers       : 43
+Tracer Entries -------> : TR#   Name  g/mole   Tracer Members; () = emitted 
+Tracer #1               :   1   NOx     46.0   NO2  (NO)  NO3   HNO2      
+Tracer #2               :   2   Ox      48.0   (O3)  NO2   2NO3  
+Tracer #3               :   3   PAN    121.0
+Tracer #4               :   4   CO      28.0   (CO)
+Tracer #5               :   5   ALK4    12.0   (4C)
+Tracer #6               :   6   ISOP    12.0   (5C)
+Tracer #7               :   7   HNO3    63.0   (HNO3)
+Tracer #8               :   8   H2O2    34.0
+Tracer #9               :   9   ACET    12.0   (3C)
+Tracer #10              :  10   MEK     12.0   (4C)
+Tracer #11              :  11   ALD2    12.0   (2C)
+Tracer #12              :  12   RCHO    58.0
+Tracer #13              :  13   MVK     70.0
+Tracer #14              :  14   MACR    70.0
+Tracer #15              :  15   PMN    147.0
+Tracer #16              :  16   PPN    135.0
+Tracer #17              :  17   R4N2   119.0
+Tracer #18              :  18   PRPE    12.0   (3C)
+Tracer #19              :  19   C3H8    12.0   (3C)
+Tracer #20              :  20   CH2O    30.0   (CH2O)
+Tracer #21              :  21   C2H6    12.0   (2C)
+Tracer #22              :  22   N2O5   105.0
+Tracer #23              :  23   HNO4    79.0
+Tracer #24              :  24   MP      48.0
+Tracer #25              :  25   DMS     62.0
+Tracer #26              :  26   SO2     64.0
+Tracer #27              :  27   SO4     96.0
+Tracer #28              :  28   SO4s    96.0
+Tracer #29              :  29   MSA     96.0
+Tracer #30              :  30   NH3     17.0
+Tracer #31              :  31   NH4     18.0
+Tracer #32              :  32   NIT     62.0
+Tracer #33              :  33   NITs    62.0
+Tracer #34              :  34   BCPI    12.0
+Tracer #35              :  35   OCPI    12.0
+Tracer #36              :  36   BCPO    12.0
+Tracer #37              :  37   OCPO    12.0
+Tracer #38              :  38   DST1    29.0
+Tracer #39              :  39   DST2    29.0
+Tracer #40              :  40   DST3    29.0
+Tracer #41              :  41   DST4    29.0
+Tracer #42              :  42   SALA    36.0
+Tracer #43              :  43   SALC    36.0
+------------------------+------------------------------------------------------
+%%% TRANSPORT MENU %%%  :
+Transport Timestep [min]: 60
+------------------------+------------------------------------------------------
+%%% CONVECTION MENU %%% :
+Turn on Cloud Conv?     : T
+Turn on PBL Mixing?     : T
+ => Use non-local PBL?  : T
+Convect Timestep (min)  : 10
+------------------------+------------------------------------------------------
+%%% EMISSIONS MENU %%%  :
+Turn on emissions?      : T
+Emiss timestep (min)    : 30 
+Include anthro emiss?   : T
+ => Use soil NOx        : F
+ => Use fertilizer NOx  : F
+ => Use soil NH3        : T
+ => Use fertilizer NH3  : T
+Use AVHRR-derived LAI?  : F
+Use MODIS-derived LAI?  : T
+------------------------+------------------------------------------------------
+%%% AEROSOL MENU %%%    :
+Online SULFATE AEROSOLS : T
+Online CRYST/AQ AEROSOLS: F
+Online CARBON  AEROSOLS : T
+Online 2dy ORG AEROSOLS : F
+Online DUST    AEROSOLS : T
+ => Use DEAD emissions? : T
+Online SEASALT AEROSOLS : T
+ -- SALA radius bin [um]: 0.1  0.5
+ -- SALC radius bin [um]: 0.5  4.0
+Online dicarb. chem.    : F
+------------------------+------------------------------------------------------
+%%% DEPOSITION MENU %%% :
+Turn on Dry Deposition? : T
+Turn on Wet Deposition? : T
+------------------------+------------------------------------------------------
+%%% CHEMISTRY MENU %%%  : 
+Turn on Chemistry?      : T
+Chemistry Timestep [min]: 30
+Read and save CSPEC_FULL: T
+USE solver coded by KPP : F
+------------------------+------------------------------------------------------
+%%% OUTPUT MENU %%%     : 123456789.123456789.123456789.1--1=ZERO+2=BPCH 
+Schedule output for JAN : 3000000000000000000000000000000
+Schedule output for FEB : 30000000000000000000000000000  
+Schedule output for MAR : 3000000000000000000000000000000
+Schedule output for APR : 300000000000000000000000000000
+Schedule output for MAY : 3000000000000000000000000000000
+Schedule output for JUN : 300000000000000000000000000000
+Schedule output for JUL : 3000000000000000000000000000000
+Schedule output for AUG : 3000000000000000000000000000000
+Schedule output for SEP : 300000000000000000000000000000
+Schedule output for OCT : 3000000000000000000000000000000
+Schedule output for NOV : 300000000000000000000000000000
+Schedule output for DEC : 3000000000000000000000000000000
+------------------------+------------------------------------------------------
+%%% GAMAP MENU %%%      :
+diaginfo.dat path       : diaginfo.dat
+tracerinfo.dat path     : tracerinfo.dat
+------------------------+------------------------------------------------------
+%%% DIAGNOSTIC MENU %%% : 
+Binary punch file name  :  ./output/ctm.YYYYMMDD.bpch
+ND32: NOx sources       : 47   all
+ND66: DAO 3-D fields    : 47   all
+ND67: DAO 2-D fields    : 47   all
+ND70: Debug output      :  1   all
+------------------------+------------------------------------------------------
+%%% PLANEFLIGHT MENU %%%:
+Turn on plane flt diag? : F
+Flight track info file  : Planeflight.dat.YYYYMMDD
+Output file name        : plane.log.YYYYMMDD
+------------------------+------------------------------------------------------
+%%% ND48 MENU %%%       :
+Turn on ND48 stations   : F
+Station Timeseries file : stations.YYYYMMDD
+Frequency [min]         :  60
+Number of stations      :   0
+------------------------+------------------------------------------------------
+%%% ND49 MENU %%%       :
+Turn on ND49 diagnostic : T
+Inst 3-D timeser. file  : ./output/tsYYYYMMDD.bpch
+Tracers to include      : 94 
+Frequency [min]         : 60
+IMIN, IMAX of region    :   1   164
+JMIN, JMAX of region    :   1   97
+LMIN, LMAX of region    :   1   1
+-------------------------------------------------------------------------------
+%%% ND50 MENU %%%       :
+Turn on ND50 diagnostic : F
+24-hr avg timeser. file : ts_24h_avg.YYYYMMDD.bpch
+Output as HDF           : F
+Tracers to include      : 82 83 84 85 86 87
+IMIN, IMAX of region    :   1  72
+JMIN, JMAX of region    :   1  46
+LMIN, LMAX of region    :   1   1
+-------------------------------------------------------------------------------
+%%% ND51 MENU %%%       :
+Turn on ND51 diagnostic : T
+LT avg timeseries file  : ../output/ts_10_12.YYYYMMDD.bpch
+Output as HDF           : F
+Tracers to include      : 1 2 3 4 7 26 27 28 30 31 32 33 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 92 93 94 95 96 97 98 99 100 104 105 115 116 117 118 119 120 121
+GMT Hour for disk write :   0
+Avg Period [LT hours]   :  10  12
+IMIN, IMAX of region    :   1  121
+JMIN, JMAX of region    :   1  133
+LMIN, LMAX of region    :   1  47
+-------------------------------------------------------------------------------
+%%% ND51b MENU %%%      :
+Turn on ND51b diagnstic : T
+LT avg timeseries file  : ../output/ts_13_15.YYYYMMDD.bpch
+Output as HDF5?         : F
+Tracers to include      : 1 2 3 4 7 26 27 28 30 31 32 33 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 92 93 94 95 96 97 98 99 100 104 105 115 116 117 118 119 120 121
+GMT Hour for disk write :   0
+Avg Period [LT hours]   :  13  15
+IMIN, IMAX of region    :   1  121
+JMIN, JMAX of region    :   1  133 
+LMIN, LMAX of region    :   1  47
+------------------------+------------------------------------------------------
+%%% PROD & LOSS MENU %%%:
+Turn on P/L (ND65) diag?: T
+# of levels for ND65    : 47
+Save O3 P/L (ND20)?     : F
+Number of P/L families  : 4   
+1st chemical family     : POX: O3 NO2 2NO3 PAN PMN PPN HNO4 3N2O5 HNO3
+2nd chemical family     : LOX: O3 NO2 2NO3 PAN PMN PPN HNO4 3N2O5 HNO3
+3rd chemical family     : PCO: CO
+4th chemical family     : LCO: CO
+------------------------+------------------------------------------------------
+%%% ARCHIVED OH MENU %%%: 
+Dir w/ archived OH files: /z2/geos/GEOS_MEAN/OHmerge/v5-07-08/
+------------------------+------------------------------------------------------
+%%% O3 P/L MENU %%%     : 
+Dir w/ O3 P/L rate files: /z2/geos/GEOS_MEAN/O3_PROD_LOSS/2003.v6-01-05/
+------------------------+------------------------------------------------------
+%%% BENCHMARK MENU %%%  :  
+Save benchmark output?  : T
+File w/ initial Ox      : Ox.mass.initial
+File w/ final Ox        : Ox.mass.final
+------------------------+------------------------------------------------------
+%%% NESTED GRID MENU %%%:  
+Save TPCORE BC's        : F
+Input BCs at 2x2.5?     : T
+Over North America?     : F
+TPCORE NA BC directory  : /z3/wangsiwen/GEOS_Chem/BC_2x25_NA/
+Over Europe?            : F
+TPCORE EU BC directory  : /z3/wangsiwen/GEOS_Chem/BC_2x25_EU/
+Over China?             : F
+TPCORE CH BC directory  : /z3/wangsiwen/GEOS_Chem/BC_2x25/
+Over Custom Region?     : F 
+TPCORE BC directory     : /z3/wangsiwen/GEOS_Chem/BC_2x25/
+BC timestep [min]       : 180
+LL box of BC region     : 101  41
+UR box of BC region     : 133  74
+1x1 offsets I0_W, J0_W  :   3   3
+------------------------+------------------------------------------------------
+%%% UNIX CMDS MENU %%%  : 
+Background symbol       : & 
+Redirect symbol         :  >
+Unix remove command     : rm -f
+Unix pathname separator : /
+Unix wildcard character : *
+Unix unzip command      : gzip -dc
+Zip file suffix         : .gz
+------------------------+------------------------------------------------------
+END OF FILE             :
+------------------------------------------------------------------------------
